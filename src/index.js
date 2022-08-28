@@ -3,25 +3,26 @@ import ReactDOM from 'react-dom';
 
 const App = () => {
   const course = 'Superadvanced web and mobile programming'
-  const part1 = {
+  const parts = [
+    {
     name: 'Basics of React',
     exercises: 8
-  } 
-  const part2 = {
+    },
+    {
     name: 'Using props',
     exercises: 10
-  }
-  const part3 = {
+    },
+    {
     name: 'Component states',
-    exercise: 12
-  }
-
+    exercises: 12
+    }
+  ]
   return (
     <div>
       <p>{course}</p>
-      <p>{part1.name}{part1.exercises}</p>
-      <p>{part2.name}{part2.exercises}</p>
-      <p>{part3.name}{part3.exercises}</p>
+      <p>{parts[0].name}{parts[0].exercises}</p>
+      <p>{parts[1].name}{parts[1].exercises}</p>
+      <p>{parts[2].name}{parts[2].exercises}</p>
     </div>
   )
 }
